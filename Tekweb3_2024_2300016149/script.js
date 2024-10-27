@@ -33,7 +33,7 @@ document.getElementById("bgColor").addEventListener("change", function () {
   addTaskBtn.addEventListener("click", function () {
     const taskValue = taskInput.value.trim(); // Get trimmed input value
   
-    // Check if the input is "adambima"
+    // Check if the input is "rachmadekaputraramadhan"
     if (taskValue === "rachmadekaputraramadhan") {
       const li = document.createElement("li");
   
