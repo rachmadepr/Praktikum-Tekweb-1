@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff; /* Solid white background */
+    color: #333; /* Dark text color for contrast */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+    padding:20px;
+    overflow : auto;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #f9f9f9; /* Light gray background for the container */
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+    width: 450px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: auto;
+    max-height: 900px;
+}
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.profile-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #ff0101;
+    contain: content;
+    object-fit: cover; /* Gunakan contain agar gambar tidak terpotong */
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fc0606;
+}
+
+.controls,
+.todo-container {
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    text-align: center;
+    color: #fc0606;
+    margin-bottom: 20px ;
+}
+
+.control-item {
+    margin-bottom: 15px; /* Space between controls */
+}
+
+
+label {
+    display: block;
+}
+
+select,
+input[type='range'],
+button,
+input[type='text'] {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border for inputs */
+}
+
+input[type='text'] {
+    width: calc(100% - 22px);
+}
+
+button {
+    background-color: #2575fc; /* Button color */
+    color: white; /* Button text color */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e5bbd; /* Button hover color */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.05); /* Slightly darkened background for list items */
+    border-radius: 5px; 
+}
+
+.completed {
+    text-decoration: line-through; /* Strike-through for completed tasks */
+}
+
+.completed button {
+    color: #ff4d4d; /* Red color for delete button when completed */
+}
+
+/* Dark Mode Styles */
+.dark-theme {
+    background-color: #15181f; /* Dark background for body */
+    color: #e5e5e5; /* Light text color for contrast */
+}
+
+.dark-theme .container {
+    background-color: #2c2f33; /* Darker background for container in dark mode */
+}
+
+.dark-theme button {
+    background-color: #7289da; /* Button color in dark mode */
+}
