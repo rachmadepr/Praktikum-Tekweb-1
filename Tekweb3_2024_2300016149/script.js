@@ -65,7 +65,7 @@ document.getElementById("bgColor").addEventListener("change", function () {
   
       taskInput.value = ""; // Clear input field after adding the task
     } else {
-      alert("Only 'adambima' is allowed as a valid task."); // Show alert for invalid input
+      alert("Only 'rachmadekaputraramadhan' is allowed as a valid task."); // Show alert for invalid input
       taskInput.value = ""; // Clear input field for invalid input
     }
   });
